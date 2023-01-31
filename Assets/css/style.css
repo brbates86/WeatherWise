@@ -32,3 +32,32 @@
 .search-history-container {
     padding: 10px;
 }
+
+.past-search {
+    background-color: white;
+    border-width: thin;
+    border-color: rgb(23, 23, 23);
+    border-style: solid;
+    border-radius: 3px;
+    margin: 0;
+    text-align: left;
+    width: 350px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+    color: rgb(124, 110, 110);
+}
+
+.current-weather-container {
+    border-color: rgb(33, 32, 32);
+    border-width: thin 0 thin thin;
+    border-style: solid;
+    border-radius: 3px;
+    margin: 20px 0 0 20px;
+    padding: 0 0 12px 0;
+}
+
+.current-title-container {
+    display: flex;
+}
+
