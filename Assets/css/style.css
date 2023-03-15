@@ -4,9 +4,17 @@
     box-sizing: border-box;
 }
 
+img {
+    width: auto;
+    height: 80px;
+    padding: 15px;
+    margin-right: auto;    
+  
+    
+}
 .h1-container {
     padding: 4px;
-    background-color:aliceblue;
+    background-color:rgb(0, 0, 0);
 }
 
 .form-container {
@@ -38,7 +46,7 @@
 .past-search {
     background-color: rgb(205, 238, 247);
     border-width: thin;
-    border-color: rgb(23, 23, 23);
+    border-color: rgb(60, 60, 60);
     border-style: solid;
     border-radius: 3px;
     margin: 0;
@@ -47,7 +55,7 @@
     height: 45px;
     line-height: 45px;
     padding: 0 20px;
-    color: rgb(40, 38, 38);
+    color: rgb(48, 47, 47);
 }
 
 .current-weather-container {
@@ -55,7 +63,7 @@
     border-width: thin 0 thin thin;
     border-style: solid;
     border-radius: 3px;
-    margin: 20px 0 0 20px;
+    margin: 10px 0 0 10px;
     padding: 0 0 12px 0;
 }
 
@@ -64,28 +72,28 @@
 }
 
 .current-title {
-    font-size: 40px;
+    font-size: 15px;
     margin: 15px 0 20px 20px;
 }
 
 .current-weather-icon {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
 }
 
 .current-temperature, .current-humidity, .current-wind-speed {
     margin: 15px 20px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .current-uv-index {
-    font-size: 20px;
+    font-size: 10px;
     display: inline;
     margin: 0 0 0 20px;
 }
 
 .current-number {
-    font-size: 20px;
+    font-size: 15px;
     display: inline;
     color: rgb(81, 176, 224);
     padding: 5px 10px;
@@ -108,7 +116,7 @@
 }
 
 .future-forecast-title {
-    font-size: 27px;
+    font-size: 20px;
 }
 
 .future-card-details {
@@ -117,7 +125,7 @@
 }
 
 .future-date {
-    font-size: 23px;
+    font-size: 15px;
 }
 
 .future-icon {
