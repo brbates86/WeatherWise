@@ -6,4 +6,4 @@ Here is the link to the application to try for yourself!
 
 https://brbates86.github.io/WeatherWise/
 
-<img width="1410" alt="Screenshot 2023-01-31 at 10 46 32 AM" src="https://user-images.githubusercontent.com/110508944/215827325-3d57c9fc-dc41-402e-a203-c12b62340c91.png">
+![Screenshot 2023-03-20 at 9 48 44 AM](https://user-images.githubusercontent.com/110508944/226376888-e92ceae4-c602-42a9-b230-76020426b428.png)
