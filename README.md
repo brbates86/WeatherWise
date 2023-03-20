@@ -1,6 +1,7 @@
 # WeatherWise a weather-forecaster-challenge
 
 WeatherWise is an application that utilizes the third-party API, OpenWeather, to retrieve weather data for cities and displays the weather (temperature, humidity, wind speed, and uv index) of the current day and the weather (temperature and humidity) for the five following days. Use this app to plan and prepare for your vacations and outings accordingly.
+I created the logo using adobe illustrator
 
 Here is the link to the application to try for yourself!
 
