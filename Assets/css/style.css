@@ -38,6 +38,7 @@ img {
 }
 
 .search-history-container {
+    width: 100%;
     padding: 10px;
 }
 
@@ -49,7 +50,7 @@ img {
     border-radius: 3px;
     margin: 0;
     text-align: left;
-    width: 350px;
+    width: 300px;
     height: 45px;
     line-height: 45px;
     padding: 0 20px;
@@ -58,10 +59,10 @@ img {
 
 .current-weather-container {
     border-color: rgb(33, 32, 32);
-    border-width: thin 0 thin thin;
+    border-width: thin thin thin thin;
     border-style: solid;
     border-radius: 3px;
-    margin: 10px 0 0 10px;
+    margin: 10px 10px 10px 10px;
     padding: 0 0 12px 0;
 }
 
@@ -141,5 +142,18 @@ img {
     body {
         font-size: 14px;
         padding: 10px;
+    }
+
+    .search-history-container {
+        margin: auto;
+        width: auto;
+    }
+
+    .current-weather-container {
+        margin: auto;
+        width: auto;
+    }
+    .future-forecast-container {
+        margin: auto;
     }
 }
