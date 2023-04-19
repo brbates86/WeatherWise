@@ -1,4 +1,4 @@
-// global variables
+
 var apiKey = "1b18ce13c84e21faafb19c931bb29331";
 var savedSearches = [];
 
@@ -159,7 +159,7 @@ var fiveDayForecastSection = function(cityName) {
 
                         // add date to 5 day forecast
                         var futureDate = $("#future-date-" + i);
-                        date = moment().add(i, "d").format("M/D/YYYY");
+                        date = moment().add(i, "d").format("M/D");
                         futureDate.text(date);
 
                         // add icon to 5 day forecast
@@ -170,18 +170,18 @@ var fiveDayForecastSection = function(cityName) {
 
                         // add temp to 5 day forecast
                         var futureTemp = $("#future-temp-" + i);
-                        futureTemp.text("Temp: " + response.daily[i].temp.day + " \u00B0F");
+                        futureTemp.text("" + response.daily[i].temp.day + " \u00B0F");
 
                         // add humidity to 5 day forecast
                         var futureHumidity = $("#future-humidity-" + i);
-                        futureHumidity.text("Humidity: " + response.daily[i].humidity + "%");
+                        futureHumidity.text("HUM: " + response.daily[i].humidity + "%");
                     }
                 })
         })
 };
 
 // called when the search form is submitted
-$("#search-form").on("submit", function() {
+$("#search-form").on("submit", function(event) {
     event.preventDefault();
     
     // get name of city searched
@@ -211,6 +211,5 @@ $("#search-history-container").on("click", "p", function() {
 });
 
 loadSearchHistory();
-
 
 

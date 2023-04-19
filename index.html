@@ -1,7 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- standard bootstrap stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -23,6 +25,7 @@
     </header>
 
     <main class="main">
+        
         <div class="container-fluid">
             <div class="row page-content">
                 <!-- column 1 -->
@@ -37,10 +40,10 @@
                             <!-- search label input and button-->
                             <div class="row m-0">
                                 <div class="col-sm-8 p-0 my-auto">
-                                    <input type="text" id="search-input" name="search-input" class="search-input rounded">
+                                    <input type="text" id="search-input" name="search-input" class="search-input">
                                 </div>
                                 <div class="col-sm-4 p-0">
-                                    <button type="submit" class="btn bg-primary rounded search-button">
+                                    <button type="submit" class="btn bg-primary search-button">
                                         <span class="glyphicon glyphicon-search"></span>
                                     </button>
                                 </div>
@@ -55,6 +58,7 @@
     <!-- column 2 -->
     <div class="col-sm-8 p-0">
         <!-- current weather conditions -->
+
         <div id="current-weather-container" class="row d-block">
             <!-- current weather title -->
             <div class="current-title-container">
@@ -78,31 +82,31 @@
             <h2 class="future-forecast-title" id="future-forecast-title"></h2>
             <div id="forecasts-cards-container" class="forecasts-cards-container d-flex justify-content-between">
                 <!-- future day forecard card -->
-                <div class="future-card bg-primary rounded">
+                <div class="future-card bg-primary">
                     <p class="future-date" id="future-date-1"></p>
                     <img id="future-icon-1" src="" alt="">
                     <p class="future-temp" id="future-temp-1"></p>
                     <p class="future-humidity" id="future-humidity-1"></p>
                 </div>
-                <div class="future-card bg-primary rounded">
+                <div class="future-card bg-primary">
                     <p class="future-date" id="future-date-2"></p>
                     <img id="future-icon-2" src="" alt="">
                     <p class="future-temp" id="future-temp-2"></p>
                     <p class="future-humidity" id="future-humidity-2"></p>
                 </div>
-                <div class="future-card bg-primary rounded">
+                <div class="future-card bg-primary">
                     <p class="future-date" id="future-date-3"></p>
                     <img id="future-icon-3" src="" alt="">
                     <p class="future-temp" id="future-temp-3"></p>
                     <p class="future-humidity" id="future-humidity-3"></p>
                 </div>
-                <div class="future-card bg-primary rounded">
+                <div class="future-card bg-primary">
                     <p class="future-date" id="future-date-4"></p>
                     <img id="future-icon-4" src="" alt="">
                     <p class="future-temp" id="future-temp-4"></p>
                     <p class="future-humidity" id="future-humidity-4"></p>
                 </div>
-                <div class="future-card bg-primary rounded">
+                <div class="future-card bg-primary">
                     <p class="future-date" id="future-date-5"></p>
                     <img id="future-icon-5" src="" alt="">
                     <p class="future-temp" id="future-temp-5"></p>
