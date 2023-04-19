@@ -1,4 +1,3 @@
-
 var apiKey = "1b18ce13c84e21faafb19c931bb29331";
 var savedSearches = [];
 
@@ -36,7 +35,6 @@ var searchHistoryList = function(cityName) {
     $("#search-input").val("");
 
 };
-
 // load saved search history entries into search history container
 var loadSearchHistory = function() {
     // get saved search history
@@ -179,6 +177,7 @@ var fiveDayForecastSection = function(cityName) {
                 })
         })
 };
+
 
 // called when the search form is submitted
 $("#search-form").on("submit", function(event) {
