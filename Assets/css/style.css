@@ -27,7 +27,7 @@ img {
 .search-input {
     width: 100%;
     height: 40px;
-    border-color: rgb(155, 231, 243);
+    border-color: rgb(255, 255, 255);
     border-width: thin;
     padding: 0 15px;
 }
@@ -111,9 +111,9 @@ img {
     background-color: red;
 }
 
-
 .future-forecast-container {
     margin: 5px 20px 0 30px;
+   display: none;
 }
 
 .future-forecast-title {
@@ -123,6 +123,7 @@ img {
 .future-card-details {
     width: 19%;
     padding: 7px 0px 0px 7px;
+    
 }
 
 .future-date {

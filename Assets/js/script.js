@@ -150,10 +150,13 @@ var fiveDayForecastSection = function(cityName) {
                     futureForecastTitle.text("5-Day Forecast:")
 
                     // using data from response, set up each day of 5 day forecast
+                    
                     for (var i = 1; i <= 5; i++) {
                         // add class to future cards to create card containers
                         var futureCard = $(".future-card");
                         futureCard.addClass("future-card-details");
+
+                        
 
                         // add date to 5 day forecast
                         var futureDate = $("#future-date-" + i);
