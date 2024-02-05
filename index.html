@@ -1,20 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WeatherWise</title>
+    <meta name="description" content="A weather application">
     <!-- standard bootstrap stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!-- style sheet for save icon -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
     <link rel="stylesheet" href="./Assets/css/style.css">
-    <title>WeatherWise</title>
-    <meta name="description" content="A weather application">
 </head>
-</head>
-
 <body class="body">
     <header class="header">
         <div class="h1-container d-flex translate-middle bg-dark justify-content-center">
@@ -22,9 +19,7 @@
             <img src="./Assets/images/weatherwise logo.png" alt="logo">
         </div>
     </header>
-
     <main class="main">
-        
         <div class="container-fluid">
             <div class="row page-content">
                 <!-- column 1 -->
@@ -50,76 +45,66 @@
                         </form>
                     </div>
                     <!-- search history -->
-                    <div id="search-history-container" class="row m-0 search-history-container">
-  
+                    <div id="search-history-container" class="row m-0 search-history-container"></div>
+                </div>
+                <!-- column 2 -->
+                <div class="col-sm-8 p-0">
+                    <!-- current weather conditions -->
+                    <div id="current-weather-container" class="row d-block">
+                        <!-- current weather title -->
+                        <div class="current-title-container">
+                            <h2 id="current-title" class="current-title d-inline"></h2>
+                            <img id="current-weather-icon" class="d-inline" src="" alt="">
+                        </div>
+                        <!-- current weather temperature, humidity, wind speed, uv index -->
+                        <p class="current-temperature" id="current-temperature"></p>
+                        <p class="current-humidity" id="current-humidity"></p>
+                        <p class="current-wind-speed" id="current-wind-speed"></p>
+                        <p class="current-uv-index" id="current-uv-index"></p>
+                        <p class="current-number rounded" id="current-number"></p>
+                         <!-- Add this inside the #current-weather-container or any suitable place -->
+                        <p id="wardrobe-suggestion" class="wardrobe-suggestion"></p>
+                    </div>
+                <!-- Add this inside the #current-weather-container or any suitable place -->
+                    <p id="wardrobe-suggestion" class="wardrobe-suggestion"></p>
+
+                    <div id="date-time-section" class="date-time-section">
+                        <p id="current-date-time"></p>
+                    </div>
+
+                    <!-- 5 day forecast -->
+                    <div class="row future-forecast-container d-block">
+                        <!-- 5 day forecast title-->
+                        <h2 class="future-forecast-title" id="future-forecast-title"></h2>
+                        <div id="forecasts-cards-container" class="forecasts-cards-container d-flex justify-content-between">
+                            <div class="row future-forecast-container d-block">
+                                <!-- 5 day forecast title-->
+                                <h2 class="future-forecast-title" id="future-forecast-title"></h2>
+                                <!-- Container for forecast cards -->
+                                <div id="forecasts-cards-container" class="forecasts-cards-container d-flex justify-content-between">
+                                    <!-- Future day forecast cards will be dynamically added here -->
+                                </div>
+                            </div>
+                            <!-- future day forecast cards -->
+                            <!-- Use a loop to avoid repetitive code -->
+                            <!-- Adjust class names accordingly -->
+                            <!-- Example loop (assuming you have data to iterate over): -->
+                            <!-- {% for forecast in forecasts %} -->
+                                <!-- <div class="future-card bg-primary"> -->
+                                    <!-- <p class="future-date" id="future-date-{{ forecast.id }}"></p> -->
+                                    <!-- <img id="future-icon-{{ forecast.id }}" src="{{ forecast.icon }}" alt=""> -->
+                                    <!-- <p class="future-temp" id="future-temp-{{ forecast.id }}"></p> -->
+                                    <!-- <p class="future-humidity" id="future-humidity-{{ forecast.id }}"></p> -->
+                                <!-- </div> -->
+                            <!-- {% endfor %} -->
+                        </div>
                     </div>
                 </div>
-    <!-- column 2 -->
-    <div class="col-sm-8 p-0">
-        <!-- current weather conditions -->
-
-        <div id="current-weather-container" class="row d-block">
-            <!-- current weather title -->
-            <div class="current-title-container">
-                <h2 id="current-title" class="current-title d-inline"></h2>
-                <img id="current-weather-icon" class="d-inline" src="" alt="">
-            </div>
-            <!-- current weather temperature -->
-            <p class="current-temperature" id="current-temperature"></p>
-            <!-- current weather humidity -->
-            <p class="current-humidity" id="current-humidity"></p>
-            <!-- current weather wind speed -->
-            <p class="current-wind-speed" id="current-wind-speed"></p>
-            <!-- current weather uv index -->
-            <p class="current-uv-index" id="current-uv-index"></p>
-            <p class="current-number rounded" id="current-number"></p>
-        </div>
-        <!-- 5 day forecast -->
-        <div class="row future-forecast-container d-block">
-            <!-- 5 day forecast title-->
-            
-            <h2 class="future-forecast-title" id="future-forecast-title"></h2>
-            <div id="forecasts-cards-container" class="forecasts-cards-container d-flex justify-content-between">
-                <!-- future day forecard card -->
-                <div class="future-card bg-primary">
-                    <p class="future-date" id="future-date-1"></p>
-                    <img id="future-icon-1" src="" alt="">
-                    <p class="future-temp" id="future-temp-1"></p>
-                    <p class="future-humidity" id="future-humidity-1"></p>
-                </div>
-                <div class="future-card bg-primary">
-                    <p class="future-date" id="future-date-2"></p>
-                    <img id="future-icon-2" src="" alt="">
-                    <p class="future-temp" id="future-temp-2"></p>
-                    <p class="future-humidity" id="future-humidity-2"></p>
-                </div>
-                <div class="future-card bg-primary">
-                    <p class="future-date" id="future-date-3"></p>
-                    <img id="future-icon-3" src="" alt="">
-                    <p class="future-temp" id="future-temp-3"></p>
-                    <p class="future-humidity" id="future-humidity-3"></p>
-                </div>
-                <div class="future-card bg-primary">
-                    <p class="future-date" id="future-date-4"></p>
-                    <img id="future-icon-4" src="" alt="">
-                    <p class="future-temp" id="future-temp-4"></p>
-                    <p class="future-humidity" id="future-humidity-4"></p>
-                </div>
-                <div class="future-card bg-primary">
-                    <p class="future-date" id="future-date-5"></p>
-                    <img id="future-icon-5" src="" alt="">
-                    <p class="future-temp" id="future-temp-5"></p>
-                    <p class="future-humidity" id="future-humidity-5"></p>
-                </div>
             </div>
         </div>
-    </div>
-</div>
-</div>
-</main>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<script src="./Assets/js/script.js"></script>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./Assets/js/script.js"></script>
 </body>
 </html>
